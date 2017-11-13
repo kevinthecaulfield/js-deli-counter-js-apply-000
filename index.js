@@ -1,5 +1,6 @@
 var katzDeli = []
 var otherDeli = ["Steven", "Blake", "Avi"]
+var line = ["Bill", 'Jane', 'Ann']
 
 function takeANumber(katzDeli, name) {
   katzDeli.push(`${name}`)
@@ -18,13 +19,13 @@ function nowServing(otherDeli) {
       return (`Currently serving ${otherDeli.shift()}.`)
 }
 
-function currentLine(katzDeli) {
+function currentLine(line) {
   let i = 0
-  while (i < katzDeli.length) {
-    line.push(` `+[i+1]+`. `  + katzDeli[i])
+  while (i < line.length) {
+    line.push(` `+[i+1]+`. `  + line[i])
     i++
   }
-  if (katzDeli.length === 0) {
+  if (line.length === 0) {
     return "The line is currently empty."
   }
   else
