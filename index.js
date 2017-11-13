@@ -19,11 +19,11 @@ function nowServing(otherDeli) {
       return (`Currently serving ${otherDeli.shift()}.`)
 }
 
-function currentLine(line) {
+function currentLine(katzDeli) {
   var line = []
   let i = 0
-  while (i < line.length) {
-    line.push(` `+[i+1]+`. `  + line[i])
+  while (i < katzDeli.length) {
+    line.push(` `+[i+1]+`. `  + katzDeli[i])
     i++
   }
   if (line.length === 0) {
