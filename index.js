@@ -1,6 +1,6 @@
 var katzDeli = []
 var otherDeli = ["Steven", "Blake", "Avi"]
-var line = ["Bill", 'Jane', 'Ann']
+
 
 function takeANumber(katzDeli, name) {
   katzDeli.push(`${name}`)
@@ -20,6 +20,7 @@ function nowServing(otherDeli) {
 }
 
 function currentLine(line) {
+  var line = []
   let i = 0
   while (i < line.length) {
     line.push(` `+[i+1]+`. `  + line[i])
